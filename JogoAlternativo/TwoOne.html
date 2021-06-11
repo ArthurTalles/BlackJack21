@@ -1,0 +1,73 @@
+<html lang="pt-br">
+
+<head>
+    <link href="TwoOne.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <title>Jogo 21</title>
+</head>
+
+<body>
+    <!-- Musica de fundo -->
+
+    <div class="musicas">
+        <audio autoplay>
+            <source src="../musica/musicaFundoBar.mp3">
+        </audio>
+    </div>
+    <!-- Titulo Tema -->
+    <h1>Jogo 21</h1>
+
+    <!--Voltar para o menu principal-->
+    <div class="menuPrincipal">
+        <a class="linkMenu" href="file:///C:/Users/User/Documents/FACU/HTML/TrabalhoJogo/JogoAlternativo/index.html">
+            <h2>Menu Principal / Reiniciar</h2>
+        </a>
+    </div>
+    <!-- Div exibe informações durante o jogo -->
+
+    <div class="caixaDeTexto" id="caixaDeTexto">
+        <p class="palavraPressione"> Pressione 'Novo Jogo' para começar!</p>
+    </div>
+
+    <!-- Div exibe "Novo Jogo" -->
+
+    <div class="caixaMain" id="novoJogo">
+        <button id="jogar"><p class="palavraPressione">Novo Jogo</p></button>
+    </div>
+
+    <!-- Div exibe Pedir e Pular ao decorrer do jogo -->
+
+    <div class="caixaMain hidden" id="caixaMain">
+        <button id="pedir">Pedir</button>
+        <button id="passar">Passar</button>
+    </div>
+
+    <!-- Tebela mostra jogo e seus acontecimentos de cartas -->
+
+    <table>
+        <tr>
+            <th id="caixaJog">
+                Jogador
+            </th>
+            <th id="caixaOp">
+                Oponente
+
+            </th>
+        </tr>
+        <tr>
+            <td class="cartas" id="primaria"></td>
+            <td class="cartas" id="secundaria"></td>
+        </tr>
+    </table>
+
+    <!-- Div exibe número de: Vitória ou Derrota -->
+
+    <div id="contador" class="caixaMain">
+        <p class="palavraVED">Vitória 🤢: 0</p>
+        <p class="palavraVED">Derrota 🤮: 0</p>
+    </div>
+    <script src="TwoOne.js"></script>
+
+</body>
+
+</html>

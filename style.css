@@ -1,0 +1,198 @@
+/**Fonte Declarada**/
+
+@font-face {
+    font-family: Fonte;
+    src: url(Fonte.ttf)
+}
+
+
+/**Transição do fundo**/
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-image: url('imagens/Fundo-background.jpg');
+    background-repeat: repeat-x;
+    animation: fundoAnimado 50s linear infinite;
+}
+
+@keyframes fundoAnimado {
+    0% {
+        background-position: 50% 0%;
+    }
+    50% {
+        background-position: 80% 0%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+
+/**Painel do Menu**/
+
+.botao {
+    margin-top: 5%;
+}
+
+.botoes {
+    text-decoration: none;
+}
+
+.palavras {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    font-family: Fonte;
+    font-size: 40px;
+    transition: all 0.3s;
+    color: #bb1c11;
+    cursor: pointer;
+}
+
+.palavras:hover {
+    text-shadow: 0px 0px 15px #ffffff;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+
+/**MODAL**/
+
+.modalIntrucoes {
+    width: 500px;
+    height: 500px;
+    background-color: #002200;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    animation: animate;
+    animation-duration: 800ms;
+    overflow: auto;
+}
+
+.modalTema {
+    width: 500px;
+    height: 500px;
+    background-color: #002200;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    animation: animate;
+    animation-duration: 800ms;
+    overflow: auto;
+}
+
+@keyframes animate {
+    from {
+        opacity: 1;
+    }
+    from {
+        opacity: 0;
+    }
+}
+
+.fechar {
+    width: 90px;
+    height: 51px;
+    position: relative;
+    top: 12px;
+    left: 5px;
+    border-radius: 50%;
+}
+
+.divFechar {
+    position: absolute;
+}
+
+
+/**Titulos**/
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    font-family: Fonte;
+    font-size: 80px;
+    color: #bb1c11;
+    text-shadow: 0px 0px 15px rgb(19, 4, 4);
+}
+
+
+/**Estilo de letras**/
+
+.subtitulos {
+    text-align: center;
+    font-family: Fonte;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.regras {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
+    font-family: Fonte;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+
+/**Escolha de temas**/
+
+.jogoCassino {
+    margin: 0 auto;
+    width: 80%;
+    height: 150px;
+    background-color: rgb(104, 0, 0);
+    opacity: 20%;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+
+.jogoCassino:hover {
+    box-shadow: 0px 0px 15px white;
+    opacity: 100%;
+}
+
+.jogoAlternativo {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 80%;
+    height: 150px;
+    background-color: rgb(104, 0, 0);
+    cursor: pointer;
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+
+.jogoAlternativo:hover {
+    box-shadow: 0px 0px 15px white;
+}
+
+.temaPalavra {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    font-family: Fonte;
+    font-size: 40px;
+    transition: all 0.3s;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
